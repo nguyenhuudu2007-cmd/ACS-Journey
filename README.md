@@ -15,7 +15,7 @@ Tôi là một sinh viên năm nhất ngành Kỹ thuật Máy tính (Computer E
 * **Ngôn ngữ:** C/C++, Python (cho AI/Scripting).
 * **Vi điều khiển/SBC:** STM32 (F1/F4), ESP32 Dual-core, Orange Pi / Raspberry Pi 4.
 * **Hệ điều hành:** FreeRTOS, Embedded Linux (Yocto/Buildroot).
-* **Workspace:** Lenovo IdeaPad (Core i7 11th Gen, 12GB RAM) - Đủ sức cân mọi IDE và mô phỏng.
+* **Workspace:** Lenovo IdeaPad (Core i7 11th Gen, 12GB RAM).
 
 ## 📂 Cấu trúc Repository
 
