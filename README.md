@@ -29,7 +29,7 @@ Lộ trình này được chia thành 9 chặng rõ ràng, bám sát cả chươ
 * `06_ESP32/` - Giao thức mạng và IoT. Project: Gateway IoT 2 tầng (MQTT).
 * `07_OPENCV/` - Tích hợp Computer Vision cơ bản.
 * `08_LINUX_EMBEDDED/` - Khởi tạo môi trường Linux trên Orange Pi/Raspberry Pi.
-* `09_CAPSTONE/` - Trùm cuối: Tích hợp toàn bộ hệ thống (AI Edge Node điều khiển STM32/ESP32).
+* `09_CAPSTONE/` - Tích hợp toàn bộ hệ thống (AI Edge Node điều khiển STM32/ESP32).
 * `PROGRESS_JOURNAL/` - Nhật ký tiến độ (Daily/Weekly log) và Bug Tracker.
 
 ## 📜 Cam kết cá nhân
