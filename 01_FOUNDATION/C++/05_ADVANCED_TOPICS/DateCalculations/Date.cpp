@@ -20,7 +20,7 @@ int zellerCongruence(int day, int month, int year) {
     int h = (day + (13*(month+1))/5 + K + K/4 + J/4 + 5*J) % 7;
     
     // Chuyển đổi về 0=CN, 1=T2, ..., 6=T7
-    return (h + 5) % 7;
+    return (h + 6) % 7;
 }
 
 // ===============================
@@ -74,6 +74,12 @@ int main() {
 
     if (year1 < 1) {
         cout << "Nam khong hop le!" << endl;
+        return 0;
+    }
+
+    if (!check(daym, month, year1)) {
+        cout << "Ngay " << daym << "/" << month << "/" << year1
+             << " khong hop le!" << endl;
         return 0;
     }
 
