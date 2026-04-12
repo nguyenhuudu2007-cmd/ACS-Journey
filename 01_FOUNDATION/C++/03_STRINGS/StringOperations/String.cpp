@@ -20,7 +20,7 @@ int main(){
     //stoi: string to integer //stoll: string to long long
     int r=stoi(a);
     cout<<r<<endl;
-    int n=12345
+    int n=12345;
     string f=to_string(n);
     cout<<f<<endl;
 

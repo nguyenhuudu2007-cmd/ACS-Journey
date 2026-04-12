@@ -9,7 +9,7 @@ int calculate_power( int n, int e){
 
 int gcdRecrusion( int a, int b ){
     if (b == 0) return a;
-    return gcdRecursion(b, a%b );
+    return gcdRecrusion(b, a%b );
 }
 
 int strLen( char*str ){
@@ -43,22 +43,6 @@ int countWayofSum ( int n, int sum){
     if ( sum == 0) return 1;
     if ( sum < 0 || n <= 0) return 0;
     return countWayofSum(n-1, sum) + countWayofSum(n, sum-n);
-}
-
-int getValueAtIndex(int *ptr, int k){
-    if (k == 0) return *ptr;
-    return getValueAtIndex(ptr+1, k-1);
-}
-
-void swap(int *ptr1, int *ptr2){
-    int temp = *ptr1;
-    *ptr1 = *ptr2;
-    *ptr2 = temp;
-}
-
-int calcSum(int *ptr, int n){
-    if (n == 0) return 0;
-    return *ptr + calcSum(ptr+1, n-1);
 }
 
 int getValueAtIndex(int *ptr, int k) {
@@ -286,6 +270,15 @@ bool deleteCol(int**& matrix, int r, int c, int col) {
 }
 
 //Struct
+struct SCP {
+    int id;
+    int objClass;
+    string speConProcedures;
+    string description;
+    string* addendums;
+    int numAddendums;
+};
+
 void addAddendum(SCP &obj, string addendum) {
     // 1. Tạo mảng mới với kích thước tăng thêm 1
     string* newAddendums = new string[obj.numAddendums + 1];
@@ -393,5 +386,10 @@ int compareObjectClass(const SCP &objA, const SCP &objB) {
     } else {
         return 0;
     }
+}
+
+int main() {
+    // Minimal entry point so the file compiles and links.
+    return 0;
 }
 
