@@ -1,27 +1,17 @@
-#include <iostream>
-#include <vector>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 
-//in lật ngược, in hoa, in thường
-int main(){
-    string s; cin>>s;
-    vector<string> v;
-    //lật ngược chuỗi
-    for ( int i=s.size()-1;i>=0;i--){
-        cout<<s[i];
-    }
-    cout<<endl;
+int main() {
+    string a, b;
+    cin >> a >> b;
 
-    //Viết hoa chuỗi
-    for ( int i=0;i<s.size();i++){
-        cout<<(char)(toupper(s[i]));
-    }
-    cout<<endl;
+    for (char &c : a) c = toupper(static_cast<unsigned char>(c));
+    for (char &c : b) c = toupper(static_cast<unsigned char>(c));
+    cout << a << ' ' << b << '\n';
 
-    //Viết thường chuỗi
-    for ( int i=0;i<s.size();i++){
-        cout<<(char)(tolower(s[i]));
-    }
-    cout<<endl;
+    for (char &c : a) c = tolower(static_cast<unsigned char>(c));
+    for (char &c : b) c = tolower(static_cast<unsigned char>(c));
+    cout << a << ' ' << b << '\n';
+
+    return 0;
 }
