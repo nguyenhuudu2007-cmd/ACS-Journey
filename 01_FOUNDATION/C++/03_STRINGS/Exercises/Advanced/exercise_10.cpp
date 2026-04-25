@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Số từ khác nhau trong chuỗi
 int main() {
     string s;
     getline(cin, s);

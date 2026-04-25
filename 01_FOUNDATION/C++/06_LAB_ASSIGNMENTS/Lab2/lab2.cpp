@@ -393,3 +393,42 @@ int main() {
     return 0;
 }
 
+
+int solve(char board[][100], int row, int col) {
+    // Kiểm tra input hợp lệ
+    if (row < 5 || col < 5 || row != col) return -1;
+
+    // Hàm phụ kiểm tra chuỗi liên tiếp
+    auto checkLine = [&](int r, int c, int dr, int dc, char player) {
+        int count = 0;
+        for (int k = 0; k < 3; k++) {
+            int nr = r + k * dr;
+            int nc = c + k * dc;
+            if (nr >= row || nc >= col) return false;
+            if (board[nr][nc] == player) count++;
+            else return false;
+        }
+        return count == 3;
+    };
+
+    // Duyệt toàn bộ bàn cờ
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            if (board[i][j] == 'x') {
+                if (checkLine(i, j, 0, 1, 'x') || // ngang
+                    checkLine(i, j, 1, 0, 'x') || // dọc
+                    checkLine(i, j, 1, 1, 'x'))   // chéo ↘
+                    return 1;
+            }
+            if (board[i][j] == 'o') {
+                if (checkLine(i, j, 0, 1, 'o') ||
+                    checkLine(i, j, 1, 0, 'o') ||
+                    checkLine(i, j, 1, 1, 'o'))
+                    return 2;
+            }
+        }
+    }
+
+    // Không ai thắng
+    return 0;
+}
