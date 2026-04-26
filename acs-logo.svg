@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <!-- Nền tối -->
+  <rect width="1280" height="640" fill="#1a1a2e" />
+  
+  <!-- Đường mạch điện tử (PCB traces) trang trí phía trên bên trái -->
+  <path d="M 0 80 L 120 80 L 160 40 L 280 40 L 280 120 L 160 120 L 120 160 L 0 160" 
+        fill="none" stroke="#e94560" stroke-width="2" opacity="0.5" />
+  <!-- Đường mạch điện tử phía dưới bên phải -->
+  <path d="M 1280 560 L 1160 560 L 1120 520 L 1000 520 L 1000 600 L 1120 600 L 1160 560 L 1280 560" 
+        fill="none" stroke="#0f3460" stroke-width="2" opacity="0.6" />
+  <path d="M 1100 80 L 1220 80 L 1260 40 L 1280 40" 
+        fill="none" stroke="#16213e" stroke-width="2" opacity="0.7" />
+
+  <!-- Biểu tượng Chip Cortex-M -->
+  <g transform="translate(200, 320)">
+    <!-- Thân chip -->
+    <rect x="-60" y="-60" width="120" height="120" rx="10" fill="none" stroke="#e94560" stroke-width="4" />
+    <!-- Các chân chip (trên, dưới, trái, phải) -->
+    <!-- Trên -->
+    <line x1="-40" y1="-60" x2="-40" y2="-85" stroke="#e94560" stroke-width="4" />
+    <line x1="0" y1="-60" x2="0" y2="-85" stroke="#e94560" stroke-width="4" />
+    <line x1="40" y1="-60" x2="40" y2="-85" stroke="#e94560" stroke-width="4" />
+    <!-- Dưới -->
+    <line x1="-40" y1="60" x2="-40" y2="85" stroke="#e94560" stroke-width="4" />
+    <line x1="0" y1="60" x2="0" y2="85" stroke="#e94560" stroke-width="4" />
+    <line x1="40" y1="60" x2="40" y2="85" stroke="#e94560" stroke-width="4" />
+    <!-- Trái -->
+    <line x1="-60" y1="-40" x2="-85" y2="-40" stroke="#e94560" stroke-width="4" />
+    <line x1="-60" y1="0" x2="-85" y2="0" stroke="#e94560" stroke-width="4" />
+    <line x1="-60" y1="40" x2="-85" y2="40" stroke="#e94560" stroke-width="4" />
+    <!-- Phải -->
+    <line x1="60" y1="-40" x2="85" y2="-40" stroke="#e94560" stroke-width="4" />
+    <line x1="60" y1="0" x2="85" y2="0" stroke="#e94560" stroke-width="4" />
+    <line x1="60" y1="40" x2="85" y2="40" stroke="#e94560" stroke-width="4" />
+    <!-- Text trong chip: ARM -->
+    <text x="0" y="5" font-family="monospace" font-size="20" font-weight="bold" fill="#e94560" text-anchor="middle">ARM</text>
+  </g>
+
+  <!-- Tiêu đề chính -->
+  <text x="540" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="start">
+    ACS-Journey
+  </text>
+  
+  <!-- Dòng mô tả -->
+  <text x="540" y="370" font-family="'Segoe UI', Arial, sans-serif" font-size="28" fill="#a0a0b0" text-anchor="start">
+    Advanced Computing Systems · Embedded Track
+  </text>
+  
+  <!-- Một đường kẻ nhỏ ngăn cách, cùng màu chip -->
+  <rect x="540" y="400" width="80" height="4" fill="#e94560" />
+
+  <!-- Tech icons: text nhỏ thay icon, tượng trưng cho các kỹ năng -->
+  <g font-family="monospace" font-size="16" fill="#a0a0b0"><text x="540" y="460">STM32 · ARM Cortex-M · C/C++ · FreeRTOS · ESP32 · Embedded Linux · Yocto · IoT</text>
+  </g>
+</svg>
