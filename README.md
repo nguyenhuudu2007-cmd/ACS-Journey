@@ -28,7 +28,7 @@ Dự án được phân rã thành 9 module cốt lõi, đi từ tầng ứng d�
 | Giai đoạn | Module | Trọng tâm Kiến thức | Dự án / Sản phẩm | Tiến độ |
 | :---: | :--- | :--- | :--- | :---: |
 | **01** | `FOUNDATION` | **Cơ sở hạ tầng:** Nắm vững C++, Tư duy Thuật toán (DSA) & Giải quyết vấn đề. | Bài tập 28Tech, LeetCode, Git/Verilog cơ bản | 🔄 |
-| **02** | `STM32_HAL` | **Abstract Layer:** Lập trình STM32 với thư viện HAL. | **P2.0:** Hệ thống an ninh mini (PIR, Buzzer, LCD) | ⏳ |
+| **02** | [`STM32_HAL`](./02_STM32_HAL/) | **Abstract Layer:** Lập trình STM32 HAL (PWM, EXTI, I2C, UART) + Qt6 HMI. | [**Mini-SCADA STM32 + ServoHMI**](https://github.com/nguyenhuudu2007-cmd/mini-scada-stm32) *(RS232, E-Stop, DS1307)* | ✅ |
 | **03** | `STM32_REGISTER` | **Deep Dive:** Giao tiếp phần cứng ở mức thanh ghi (Register). | Viết lại driver GPIO/Timer không dùng HAL | ⏳ |
 | **04** | `STM32_BAREMETAL` | **Tối ưu hóa:** Lập trình không hệ điều hành, CMSIS. | Nâng cấp P2.0 lên Bare-metal | ⏳ |
 | **05** | `RTOS_DMA` | **Đa nhiệm:** Quản lý tài nguyên, FreeRTOS & Truy cập bộ nhớ trực tiếp. | **P3:** Data Logger (FreeRTOS + DMA + SD Card) | ⏳ |
